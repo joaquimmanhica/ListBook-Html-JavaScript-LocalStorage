@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Lista de Livros</title>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main>
+    <div class="mt-4">
+
+      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="mt-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="d-flex justify-content-center py-4">
+                <a href="#" class="logo d-flex align-items-center w-auto">
+                  <img src="assets/img/logo.png" alt="">
+                  <span class="d-none d-lg-block">ListBook</span>
+                </a>
+              </div><!-- End Logo -->
+
+              <div class="card mt-4">
+
+                <div class="container card-body">
+
+                  <div class="pt-4 pb-2">
+                    <h5 class="card-title text-center pb-0 fs-4">Insere um Livro</h5>
+                    <p class="text-center small">Introduz os detalhes do livro para inseri-lo</p>
+                  </div>
+
+                  <form class="row g-3 col-12" id = "book-form">
+
+                    <div class="col-12 form-group">
+                      <label for="title" class="form-label">Titulo</label>
+                      <input type="text" name="titulo-livro" class="form-control" id="titulo-livro" >
+                      <div class="invalid-feedback">forneca um titulo!</div>
+                    </div>
+
+                    <div class="col-12 form-group">
+                      <label for="autor" class="form-label">Autor</label>
+                      <div class="input-group has-validation">
+                        <input type="text" name="autor" class="form-control" id="autor-livro" >
+                        <div class="invalid-feedback">Porfavor, introduz um autor</div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="isbn" class="form-label">ISBN</label>
+                      <input type="text" name="isbn" class="form-control" id="isbn-livro">
+                      <div class="invalid-feedback">Porfavor, introduz um isbn!</div>
+                    </div>
+
+                
+                    <div class="col-12">
+                      <button class="btn btn-primary w-100" type="submit">Inserir Livro</button>
+                    </div>
+                  </form>
+
+                  <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Autor</th>
+                            <th>ISBN#</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list">  
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+             
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main><!-- End #main -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
